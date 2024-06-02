@@ -89,13 +89,16 @@
           if(userGuess < randomNumber) {
             if(userGuess + 5 > randomNumber) {
                 lowOrHi.textContent = 'Last guess was low! (but within 5 places of the correct number)';
-            }
-            lowOrHi.textContent = 'Last guess was too low!';
+            } else {
+                lowOrHi.textContent = 'Last guess was too low!';
+            } 
           } else if(userGuess > randomNumber) {
             if(userGuess - 5 < randomNumber) {
                 lowOrHi.textContent = 'Last guess was high! (but within 5 places of the correct number)';
+            } else {
+                lowOrHi.textContent = 'Last guess was too high!';
             }
-            lowOrHi.textContent = 'Last guess was too high!';
+            
           }
         }
 
