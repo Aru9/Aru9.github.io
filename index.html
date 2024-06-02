@@ -50,11 +50,19 @@
       let randomNumber = Math.floor(Math.random() * 100) + 1;
 
       const guesses = document.querySelector('.guesses');
+      console.log("guesses: ", guesses);
+
       const lastResult = document.querySelector('.lastResult');
-      const lowOrHi = document.querySelector('.lowOrHi'); 
+      console.log("lastResult: ", lastResult);
+
+      const lowOrHi = document.querySelector('.lowOrHi');
+      console.log("lowOrHi: ", lowOrHi);
 
       const guessSubmit = document.querySelector('.guessSubmit');
+      console.log("guessSubmit: ", guessSubmit);
+
       const guessField = document.querySelector('.guessField');
+      console.log("guessField: ", guessField);
 
       let guessCount = 1;
       let resetButton;
@@ -127,7 +135,7 @@
         randomNumber = Math.floor(Math.random() * 100) + 1;
       }
 
-      
+
     </script>
   </body>
 </html>
